@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service — KitchenAi</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #ffffff;
+      --surface: #f8f9fa;
+      --border: #e2e4e8;
+      --text: #1a1a2e;
+      --body-text: #3d3d4e;
+      --muted: #6b7280;
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --amber: #b45309;
+    }
+    body {
+      background: var(--bg);
+      color: var(--body-text);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.75;
+    }
+
+    /* Header */
+    header {
+      background: #ffffff;
+      border-bottom: 2px solid var(--primary);
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 38px; height: 38px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .logo-name {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 20px; font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.3px;
+    }
+    header h1 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 28px; font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      letter-spacing: -0.4px;
+    }
+    .meta {
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+    }
+    .badge {
+      display: inline-block;
+      background: #eff0ff;
+      border: 1px solid #c7c9f8;
+      color: var(--primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 11px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      padding: 3px 10px; border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    /* Nav bar */
+    .nav-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: center;
+    }
+    .nav-bar a {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px; font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 6px 16px;
+      border-right: 1px solid var(--border);
+    }
+    .nav-bar a:first-child { border-left: 1px solid var(--border); }
+    .nav-bar a.active { color: var(--primary); font-weight: 600; background: #fff; }
+    .nav-bar a:hover { color: var(--primary); }
+
+    /* Layout */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 44px 24px 72px;
+    }
+
+    /* Intro block */
+    .intro-block {
+      background: #eff0ff;
+      border-left: 4px solid var(--primary);
+      border-radius: 0 6px 6px 0;
+      padding: 18px 22px;
+      margin-bottom: 36px;
+      font-size: 14px;
+      color: #3d3d70;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    .intro-block strong { color: var(--primary-dark); }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-of-type { border-bottom: none; }
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .section-num {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 11px; font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase; letter-spacing: 1px;
+      background: #eff0ff;
+      padding: 2px 8px; border-radius: 4px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+    .section h2 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+    .section p {
+      font-size: 15px;
+      color: var(--body-text);
+      margin-bottom: 12px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul, .section ol {
+      padding-left: 22px;
+      font-size: 15px;
+      color: var(--body-text);
+    }
+    .section li { margin-bottom: 7px; }
+    .section li:last-child { margin-bottom: 0; }
+
+    /* Info boxes */
+    .info-box {
+      background: #f8f9ff;
+      border: 1px solid #d4d6fb;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13.5px;
+      color: #4a4a6a;
+      line-height: 1.6;
+    }
+    .info-box strong { color: var(--primary-dark); }
+
+    .info-box-warning {
+      background: #fffbf0;
+      border: 1px solid #fcd34d;
+      border-left: 4px solid var(--amber);
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13.5px;
+      color: #5c4a1e;
+      line-height: 1.6;
+    }
+    .info-box-warning strong { color: var(--amber); }
+
+    /* Plan grid */
+    .plan-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .plan-card {
+      background: #f8f9ff;
+      border: 1px solid #d4d6fb;
+      border-radius: 6px;
+      padding: 16px 18px;
+    }
+    .plan-card h4 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px; font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .plan-card p {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px; color: var(--muted);
+      margin: 0;
+    }
+    @media (max-width: 500px) {
+      .plan-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--primary);
+      border-radius: 8px;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .contact-card h3 {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 17px; font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .contact-card p {
+      color: var(--muted);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px; margin-bottom: 18px;
+    }
+    .btn-row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 600; font-size: 13.5px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--primary-dark); }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+    }
+    .btn-outline:hover { background: #eff0ff; }
+
+    /* Footer */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 24px;
+    }
+    footer p {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      .section { padding-bottom: 26px; margin-bottom: 26px; }
+      .contact-card { padding: 20px 18px; }
+      .nav-bar a { font-size: 12px; padding: 6px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🍳</div>
+      <span class="logo-name">KitchenAi</span>
+    </div>
+    <div class="badge">Legal Document</div>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective Date: March 6, 2026 &nbsp;&middot;&nbsp; Last Updated: March 6, 2026</p>
+  </header>
+
+  <nav class="nav-bar">
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html" class="active">Terms of Service</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="intro-block">
+      <strong>Please read carefully.</strong> These Terms constitute a legally binding agreement between you and KitchenAi. By using the app, you agree to these Terms. If you do not agree, please do not use the Service.
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">Intro</span>
+        <h2>Agreement to Terms</h2>
+      </div>
+      <p>Welcome to <strong>KitchenAi</strong>. These Terms of Service ("Terms") constitute a legally binding agreement between you ("User", "you") and KitchenAi ("Company", "we", "our") governing your use of the KitchenAi mobile application and related services.</p>
+      <p>By downloading, installing, or using the app, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="privacy-policy.html" style="color: var(--primary);">Privacy Policy</a>. If you do not agree, please do not use the Service.</p>
+      <div class="info-box">
+        <strong>Age Requirement:</strong> You must be at least 13 years old (or 16 in the EU) to use KitchenAi. By using the Service, you confirm you meet this requirement.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 1</span>
+        <h2>Description of Service</h2>
+      </div>
+      <p>KitchenAi is an AI-powered kitchen design application that allows users to:</p>
+      <ul>
+        <li>Generate AI redesigns of kitchen spaces from photos</li>
+        <li>Explore and apply various kitchen styles and themes</li>
+        <li>Save, compare, and share design results</li>
+        <li>Access a library of before/after kitchen designs for inspiration</li>
+        <li>Customise design preferences and renovation tool selections</li>
+      </ul>
+      <p>The Service uses third-party AI models (including OpenAI's image generation API) to create design results. Output quality may vary and is not guaranteed.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 2</span>
+        <h2>Subscriptions and Billing</h2>
+      </div>
+      <p>KitchenAi offers free and premium subscription tiers. Premium features are unlocked through in-app purchases managed by <strong>RevenueCat</strong>.</p>
+      <div class="plan-grid">
+        <div class="plan-card">
+          <h4>Free Tier</h4>
+          <p>Limited design generations per month with access to basic styles and features.</p>
+        </div>
+        <div class="plan-card">
+          <h4>Premium Tier</h4>
+          <p>Unlimited generations, all styles, HD exports, and priority processing.</p>
+        </div>
+      </div>
+      <p><strong>Billing Terms:</strong></p>
+      <ul>
+        <li>Subscriptions are billed in advance on a weekly, monthly, or annual basis depending on your chosen plan</li>
+        <li>Payment is charged to your Apple ID or Google Play account upon purchase confirmation</li>
+        <li>Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date</li>
+        <li>You can manage and cancel subscriptions in your App Store / Google Play subscription settings</li>
+        <li>We do not handle payment card data directly — all billing is processed by Apple or Google</li>
+      </ul>
+      <div class="info-box-warning">
+        <strong>No Refunds:</strong> All purchases are final and non-refundable except as required by applicable law or as provided by Apple's or Google's refund policies. If you believe you are entitled to a refund, please contact Apple Support or Google Play Support directly.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 3</span>
+        <h2>Free Trial</h2>
+      </div>
+      <p>We may offer a free trial period for premium features. The following conditions apply:</p>
+      <ul>
+        <li>Free trials are available to new subscribers only (one per Apple ID or Google account)</li>
+        <li>At the end of the trial period, your subscription will automatically convert to a paid plan unless cancelled before the trial ends</li>
+        <li>We reserve the right to modify or discontinue free trial offers at any time</li>
+        <li>Cancelling during the trial period will not result in any charges</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 4</span>
+        <h2>User Content and Licenses</h2>
+      </div>
+      <p><strong>Your Content:</strong> You retain full ownership of photos and images you upload to KitchenAi ("User Content"). By using the Service, you grant us a limited, non-exclusive, royalty-free license to process your User Content solely for the purpose of providing the Service (i.e., generating design results).</p>
+      <p><strong>Generated Content:</strong> AI-generated design results ("Generated Content") are provided to you for personal, non-commercial use. You may:</p>
+      <ul>
+        <li>Save and download generated designs for personal use</li>
+        <li>Share generated designs on social media for personal and non-commercial purposes</li>
+        <li>Use designs as reference or inspiration for actual renovations</li>
+      </ul>
+      <p>You may not sell, sublicense, or use Generated Content for commercial purposes without our prior written consent.</p>
+      <div class="info-box">
+        <strong>Responsibility:</strong> You are solely responsible for ensuring you have the rights to upload any photos or images. Do not upload content that includes other individuals without their consent or content that infringes third-party intellectual property rights.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 5</span>
+        <h2>Acceptable Use</h2>
+      </div>
+      <p>You agree to use KitchenAi only for lawful purposes. You must not:</p>
+      <ul>
+        <li>Upload images that contain nudity, explicit content, violence, or hate speech</li>
+        <li>Attempt to reverse-engineer, decompile, or disassemble any part of the app</li>
+        <li>Use automated tools, bots, or scripts to access or scrape the Service</li>
+        <li>Attempt to gain unauthorised access to our systems or other users' accounts</li>
+        <li>Use the Service to violate any applicable laws or regulations</li>
+        <li>Impersonate any person or entity or misrepresent your affiliation with any person or entity</li>
+        <li>Attempt to circumvent subscription restrictions or access premium features without a valid subscription</li>
+        <li>Share, resell, or redistribute access to your account or subscription</li>
+      </ul>
+      <p>Violation of these rules may result in immediate suspension or termination of your account without refund.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 6</span>
+        <h2>Intellectual Property</h2>
+      </div>
+      <p>All aspects of the KitchenAi app — including but not limited to the software, design, branding, logos, text, graphics, and underlying technology — are owned by KitchenAI and protected by applicable intellectual property laws.</p>
+      <p>Nothing in these Terms grants you any rights to use our trademarks, trade names, logos, or other brand identifiers without our prior written consent.</p>
+      <p>We respect intellectual property rights and expect our users to do the same. If you believe any content on the platform infringes your copyright, please contact us with a detailed description of the alleged infringement.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 7</span>
+        <h2>Disclaimer of Warranties</h2>
+      </div>
+      <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+      <ul>
+        <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+        <li>Warranties that the Service will be uninterrupted, error-free, or secure</li>
+        <li>Warranties regarding the accuracy, reliability, or quality of AI-generated designs</li>
+        <li>Warranties that generated designs are suitable for actual construction or renovation</li>
+      </ul>
+      <div class="info-box-warning">
+        <strong>Design Accuracy:</strong> AI-generated kitchen designs are for inspirational purposes only. They are not architectural plans or construction blueprints. Always consult a qualified professional before undertaking any renovation work.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 8</span>
+        <h2>Limitation of Liability</h2>
+      </div>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, KITCHENAi AND ITS AFFILIATES, OFFICERS, EMPLOYEES, AGENTS, AND PARTNERS SHALL NOT BE LIABLE FOR:</p>
+      <ul>
+        <li>Any indirect, incidental, special, consequential, or punitive damages</li>
+        <li>Loss of profits, data, goodwill, or other intangible losses</li>
+        <li>Damages resulting from reliance on AI-generated designs for actual construction</li>
+        <li>Unauthorised access to or alteration of your content or data</li>
+        <li>Any third-party conduct or content accessible through the Service</li>
+      </ul>
+      <p>Our total aggregate liability to you for any claims arising from these Terms or your use of the Service shall not exceed the amount you paid us in the twelve (12) months preceding the claim, or $10 USD, whichever is greater.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 9</span>
+        <h2>Termination</h2>
+      </div>
+      <p>Either party may terminate this agreement at any time:</p>
+      <ul>
+        <li><strong>By You:</strong> Delete the app from your device and cancel any active subscriptions</li>
+        <li><strong>By Us:</strong> We may suspend or terminate your access at any time for violation of these Terms, with or without notice</li>
+      </ul>
+      <p>Upon termination, your right to use the Service ceases immediately. Provisions regarding intellectual property, disclaimers, limitations of liability, and dispute resolution survive termination.</p>
+      <p>If we terminate your account without cause, we will provide a pro-rated refund for any unused portion of a prepaid subscription period.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 10</span>
+        <h2>Third-Party Services</h2>
+      </div>
+      <p>KitchenAi integrates with the following third-party services:</p>
+      <ul>
+        <li><strong>OpenAI</strong> — AI image generation (subject to OpenAI's Terms of Use and Usage Policies)</li>
+        <li><strong>RevenueCat</strong> — Subscription and payment management</li>
+        <li><strong>Apple App Store / Google Play</strong> — App distribution and payment processing</li>
+      </ul>
+      <p>Your use of these third-party services is governed by their respective terms and privacy policies. We are not responsible for the practices of any third-party services.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 11</span>
+        <h2>Changes to Terms</h2>
+      </div>
+      <p>We reserve the right to modify these Terms at any time. When we make changes, we will:</p>
+      <ul>
+        <li>Update the "Last Updated" date at the top of this page</li>
+        <li>Display a notice within the app for material changes</li>
+        <li>For significant changes, provide at least 14 days' notice before the changes take effect</li>
+      </ul>
+      <p>Your continued use of the Service after changes become effective constitutes your acceptance of the revised Terms. If you do not agree with the updated Terms, you must stop using the Service.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <span class="section-num">§ 12</span>
+        <h2>Governing Law and Disputes</h2>
+      </div>
+      <p>These Terms shall be governed by and construed in accordance with applicable law. Any disputes arising from or relating to these Terms or the Service shall first be attempted to be resolved informally by contacting us.</p>
+      <p>If informal resolution fails, disputes shall be resolved through binding arbitration, except that either party may seek injunctive relief in a court of competent jurisdiction for intellectual property infringement or other urgent matters.</p>
+      <p>You agree that any claim against KitchenAi must be filed within one (1) year after the claim arose, otherwise it is permanently barred.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Questions About These Terms?</h3>
+      <p>If you have any questions, concerns, or requests regarding these Terms of Service, please get in touch.</p>
+      <div class="btn-row">
+        <a href="mailto:umairkhalidsidd@gmail.com" class="btn">umairkhalidsidd@gmail.com</a>
+        <a href="privacy-policy.html" class="btn btn-outline">Privacy Policy</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>
+      &copy; 2026 KitchenAi. All rights reserved. &nbsp;&middot;&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a> &nbsp;&middot;&nbsp;
+      <a href="terms-of-service.html">Terms of Service</a> &nbsp;&middot;&nbsp;
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>
