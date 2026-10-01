@@ -263,7 +263,7 @@
   <div class="container">
 
     <div class="intro-block">
-      <strong>Summary:</strong> Remodel AI needs no account. Your photos are sent to our server and to OpenAI only to make your design or plan, and our server does not keep them. Your designs stay on your phone. We have no ads and no tracking, and we never sell your information.
+      <strong>Summary:</strong> Remodel AI needs no account. Your photos are sent to our server and to OpenAI only to make your design or plan, and our server does not keep them. Your designs stay on your phone. We use Google Firebase to receive crash reports and anonymous usage statistics, so we can fix problems and improve the app. We have no ads, do not track you across other companies' apps, and never sell your information.
     </div>
 
     <div class="section">
@@ -298,13 +298,15 @@
         <li><strong>Your IP address</strong>, used only for a short time to prevent abuse (for example, too many requests from one connection)</li>
         <li><strong>Basic technical details</strong> sent with each request: the platform (iOS or Android), the app version and the app language</li>
         <li><strong>Technical records</strong> of each request on our server: the time, the feature used and technical details of the result (for example, the AI model used or the number of rooms found). These records <strong>do not contain your photos</strong></li>
+        <li><strong>Crash reports</strong> (Firebase Crashlytics, by Google): if the app crashes, a report of what the app was doing (the code that failed, the device model, the system and app version, free memory and disk space) and a random ID for this installation</li>
+        <li><strong>App usage</strong> (Google Analytics for Firebase): which screens are opened, how long the app is used, the device model, system and app version, language, and approximate region (country or city, worked out from the IP address), with a random ID for this installation. We do not collect your phone's advertising ID</li>
       </ul>
       <p class="subsection-title">Information from others</p>
       <ul>
         <li>Your purchase and subscription status, from <strong>RevenueCat</strong> and the <strong>Apple App Store</strong> or <strong>Google Play</strong>. We never see or store your card or payment details</li>
       </ul>
       <div class="info-box">
-        <strong>What we do not collect:</strong> we do not use advertising, ad tracking, analytics tools or crash-reporting tools, we do not track you across other apps or websites, and we do not collect your precise location, contacts or browsing history.
+        <strong>What we do not collect:</strong> we show no advertising, we do not read your phone's advertising ID, we do not track you across other companies' apps or websites, and we do not collect your precise location, contacts or browsing history. Crash reports and usage statistics are not linked to your name or to any account.
       </div>
 
     </div>
@@ -321,6 +323,7 @@
         <li>To give free users their free designs, plans and walk-through, and to unlock Pro features after a purchase</li>
         <li>To apply fair daily limits and to prevent abuse and fraud</li>
         <li>To review pictures that are reported to us and to improve the quality and safety of results</li>
+        <li>To find and fix crashes and errors (crash reports), and to understand which features are used so we can improve them (usage statistics)</li>
         <li>To answer your support emails</li>
         <li>To send you the daily design-idea reminders, if you allow notifications</li>
         <li>To meet our legal obligations</li>
@@ -372,6 +375,7 @@
         <li><strong>OpenAI</strong>: creates the AI designs and reads floor plans (your photo, your text and your choices for that request)</li>
         <li><strong>Our hosting provider</strong>: runs the server that passes your request to OpenAI and keeps the technical records and reports described above</li>
         <li><strong>RevenueCat</strong>: manages purchases and subscriptions with an anonymous app user ID</li>
+        <li><strong>Google (Firebase Crashlytics and Google Analytics for Firebase)</strong>: receives the crash reports and usage statistics described in § 1, under Google's privacy policy and Firebase's data processing terms</li>
         <li><strong>Apple and Google</strong>: process payments, app downloads and the in-app rating prompt</li>
       </ul>
       <p>We may also disclose information if the law requires it (for example, a valid court order), to protect the rights and safety of our users or of others, or as part of a merger or sale of the business, in which case this policy will continue to apply to your information.</p>
@@ -386,6 +390,8 @@
       <ul>
         <li><strong>Photos</strong>: not kept on our server after your request is finished</li>
         <li><strong>Usage counters</strong> for daily limits: removed automatically after a day (after an hour for some limits)</li>
+        <li><strong>Crash reports</strong>: kept by Firebase Crashlytics for 90 days</li>
+        <li><strong>Usage statistics</strong>: kept by Google Analytics for 2 months at the level of single events (Google's default setting); after that only in summary reports</li>
         <li><strong>Technical records and reports</strong>: kept only as long as needed to run, secure and improve the Service, and then deleted</li>
         <li><strong>Support emails</strong>: kept as long as needed to help you</li>
         <li><strong>Everything stored in the app</strong> stays on your phone until you delete it or the app</li>
